@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+@import url("https://rsms.me/inter/inter.css");
+
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  transition: all 1.5s;
+}
+
+body {
+  font-family: inter;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.canvas {
   pointer-events: none;
+  position: fixed !important;
+  top: 0px;
+  left: 0px;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 100;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.projectView {
+  /* position: fixed !important; */
+  top: 0px;
+  left: 0px;
+  width: 100% !important;
+  height: 100% !important;
+}
+.outline {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: black;
+}
+.lateReveal {
+  clip-path: polygon(25% 0%, 25% 0, 0 100%, 0% 100%);
+  transition: all 1.5s;
+}
+.outlineSmall {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
 }
 
-.App-header {
-  background-color: #282c34;
+.gallery-item-wrapper {
+  aspect-ratio: 16/9;
+}
+.subtitle {
+  -webkit-text-stroke: 2px #dbd8d6;
+}
+.mainContainer {
+  /* width: 100%;
+  height: 100%; */
+}
+
+
+
+.smooth-scroll {
+  overflow: hidden !important;
+}
+
+.min-h-50 {
+  min-height: 50vh;
+}
+
+.min-h-100 {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+section {
+  width: 100vw;
   color: white;
+  font-size: 40px;
+  font-weight: 800;
 }
 
-.App-link {
-  color: #61dafb;
+
+.red {
+  background: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.blue {
+  background: blue;
+}
+
+.green {
+  background: green;
+}
+
+.purple {
+  background: purple;
+}
+
+.pink {
+  background: pink;
+}
+
+.horizontalScrolling {
+  padding-top: 125px;
+  padding-bottom: 125px;
+}
+
+.horizontalScrolling .section-inner {
+  min-height: max-content;
+}
+
+[data-scroll-in-section] {
+  display: inline-flex;
+  padding-right: 50px;
+}
+
+.item {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  padding: 10px;
+}
+
+.item + .item {
+  margin-left: 25px;
+}
+
+.sectionLeftAndRight .section-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+section.afterHorizontal {
+  margin-top: -100vh;
 }
