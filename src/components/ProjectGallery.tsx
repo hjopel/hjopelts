@@ -160,6 +160,7 @@ const GalleryItem = ({ img, updateActiveImage, idx }: GalleryItemProps) => {
             filter={
               onScreen ? "none" : "grayscale(100%) sepia(20%) brightness(80%)"
             }
+            opacity={0}
           />
         </Flex>
       </Grid>

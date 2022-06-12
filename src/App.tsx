@@ -18,7 +18,7 @@ import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import Scene from "./components/idk";
 import ProjectGallery from "./components/ProjectGallery";
-import CTASection from "./components/CTASection";
+import ProjectScene from "./components/ProjectScene";
 import * as THREE from "three";
 
 import LoadingOverlay from "./components/Loader";
@@ -131,10 +131,7 @@ const GsapTest = () => {
 
           {/* @ts-ignore */}
           <View track={projects}>
-            <mesh>
-              <boxBufferGeometry />
-              <meshNormalMaterial />
-            </mesh>
+           <ProjectScene target={projects.current} />
           </View>
 
           <Preload all />
