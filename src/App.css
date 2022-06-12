@@ -31,7 +31,7 @@ body {
   left: 0px;
   width: 100vw !important;
   height: 100vh !important;
-  z-index: 100;
+  z-index: -1;
 }
 
 .projectView {
@@ -43,8 +43,14 @@ body {
 }
 .outline {
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: black;
+}
+.outlineBg {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: gray;
+
 }
 .lateReveal {
   clip-path: polygon(25% 0%, 25% 0, 0 100%, 0% 100%);

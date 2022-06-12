@@ -21,7 +21,11 @@ const colors = {
 // #303133
 const theme = extendTheme({
   colors,
-  fonts: { heading: "Old Standard TT, serif" },
+  fonts: {
+    heading: "Raleway, sans-serif",
+    body: "Arapey, serif",
+    // body: "Frank Ruhl Libre, serif",
+  },
 });
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

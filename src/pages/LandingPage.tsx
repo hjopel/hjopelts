@@ -9,7 +9,6 @@ import Footer from "../components/Footer";
 import Scene from "../components/idk";
 import ProjectGallery from "../components/ProjectGallery";
 import CTASection from "../components/CTASection";
-import useLocoScroll from "../components/customHooks/useLocoScroll";
 
 // import * as oida from "framer-motion/three"
 function App({ children }) {
@@ -25,7 +24,6 @@ function App({ children }) {
     setTimeout(() => setIsLoading(false), 3000);
   });
 
-  useLocoScroll(true);
 
   return (
     <>
